@@ -52,7 +52,7 @@
         }
 
         function checkIfPWAInstalled() {
-            const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
+            const isStandalone = window.matchMedia('(display-mode: fullscreen)').matches || window.navigator.standalone;
             if (isStandalone) {
                 window.location.href = 'https://www.canva.com/';
             }
@@ -64,6 +64,6 @@
     </script>
 </head>
 <body>
-  Click <a href="">here</a> if not redirected.
+  Click <a href="https://www.canva.com/">here</a> if not redirected.
 </body>
 </html>
